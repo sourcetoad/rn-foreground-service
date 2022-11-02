@@ -252,7 +252,7 @@ class NotificationHelper {
         channel.setDescription(this.config.getChannelDescription());
         channel.enableLights(true);
         channel.enableVibration(bundle.getBoolean("vibration"));
-        channel.setShowBadge(true);
+        channel.setShowBadge(false);
 
         manager.createNotificationChannel(channel);
         channelCreated = true;
